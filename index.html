@@ -9,25 +9,30 @@
 </head>
 <body>
   <nav role="navigation" class="navbar" id="nav-container">
-    <div class="navbar_link navbar_link_brand">
+    <a class="navbar_link navbar_link_brand" href="#main">
       JC <i class="fa fa-dna"></i>
-    </div>
-    <div class="navbar_items navbar_items_right">
-      <div class="navbar_link_right">
+    </a>
+    <a class="navbar_items navbar_items_right">
+      <a class="navbar_link_right about" href="#about">
         About
-      </div>
-      <div class="navbar_link_right">
+      </a>
+      <a class="navbar_link_right portfolio" href="#work">
         Portfolio
-      </div>
-      <div class="navbar_link_right">
+      </a>
+      <a class="navbar_link_right contact" href="#contact">
         Contact
-      </div>
+      </a>
     </div>
     <div class="navbar_link navbar_link_toggle">
       <i class="fa fa-bars"></i>
     </div>
+    <div class="expanded_toggle_links hidden">
+      <a href="#about" class="expanded_link">About</a>
+      <a href="#work" class="expanded_link">Portfolio</a>
+      <a href="#contact" class="expanded_link">Contact</a>
+    </div>
   </nav>
-  <main role="main">
+  <main role="main" id="main">
     <header role="banner">
       <p class="hello">Hello, I'm Jordan</p>
       <p class="headline">Full stack developer with an ever-growing love for learning</p>
@@ -35,7 +40,7 @@
     </header>
 
 <!-- About Me Section -->
-    <section>
+    <section id="about">
       <div class="photo">
         <img class="jordan-photo" src="./img/IMG_9115 (1).jpg" alt="Photo of Jordan">
       </div>
@@ -44,26 +49,28 @@
         <p class="bio">
           Currently enrolled at Thinkful, I am cultivating my path to graduate from the Engineering Immersion Full Stack program and set my software developer career in motion. I have always loved solving problems. I pursued that interest to my first position after college as a Product Manager for a start-up and this is where I was first introduced to code. Quickly, I became intrigued and even quicker, my interest became an obsession. 
           <br>
+          <br>
           I often geek out about elegant designs, great user experience, and well-written code to execute efficiently. The notion that I can build great things that will help people and the world around me is what inspires me to learn as much as I can and become the best I can be at this skill. That is what I aim to conquer each day. 
+          <br>
           <br>
           When I am not writing code, I can be found spending time with my dog and family, cozied up reading a book with some coffee, or out enjoying some nature. 
         </p>
       </div>
     </section>
 <!-- Project Section -->
-    <section>
+    <section id="work">
       <p class="work">My Work</p>
     </section>
 
     <section>
       <p class="project-title">Bookmark it.</p>
-      <div class="p-photo">
-        <img src="" alt="Photo snippet of project">
+      <div >
+        <img class="p-photo" src="./img/bookmark-app.png" alt="Photo snippet of project">
       </div>
       <div class="project-content">
         <div class="p-left">
           <p class="subtitle"><a href="">Repo</a></p>
-          <p class="subtitle"><a href="">Live</a></p>
+          <p class="subtitle"><a href="https://thinkful-ei-jaguar.github.io/jordan-bookmarks-app/">Live</a></p>
           <p class="subtitle tech">Tech</p>
           <p class="tech-stack">HTML, CSS, JavaScript, jQuery/AJAX</p>
         </div>
@@ -94,16 +101,20 @@
         </div>
       </div>
     </section>
+    
 <!-- Contact -->
-    <section class="contact-container">
+    <section class="contact-container" id="contact">
       <p>Get In Touch</p>
       <div class="icons">
-      <span class="fab fa-github"></span>
-      <span class="fab fa-linkedin"></span>
-      <span class="fa fas fa-envelope"></span>
+      <span><a class="fab fa-github" href="https://github.com/jordanxcast"></a></span>
+      <span><a class="fab fa-linkedin" href="https://www.linkedin.com/in/jordan-castillo/"></a></span>
+      <span><a class="fa fas fa-envelope" href="mailto:jordanxcallaway@gmail.com"></a></span>
       </div>
     </section>
   </main>
   <footer role="content-info">Footer</footer>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/cuid/1.3.8/browser-cuid.min.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="./index.js"></script>
 </body>
 </html>
